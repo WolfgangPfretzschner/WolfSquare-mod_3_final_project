@@ -2,14 +2,19 @@ import React, { Component } from 'react';
 import NoteList from './NoteList';
 
 class Sidebar extends Component {
-  render() {
-    return (
-      <div className='master-detail-element sidebar'>
-        <NoteList />
-        <button>New</button>
-      </div>
-    );
-  }
+    constructor(props) {
+        super(props)
+    }
+
+    render() {
+        console.log(this.props.notes)
+        return (
+        <div className='master-detail-element sidebar'>
+            <NoteList  notes={this.props.notes}/>
+            <button  >New</button>
+        </div>
+        );
+    }
 }
 
 export default Sidebar;

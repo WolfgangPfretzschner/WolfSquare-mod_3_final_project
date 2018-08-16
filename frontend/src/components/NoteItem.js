@@ -1,9 +1,9 @@
 import React from 'react';
 
-const NoteList = (props) => (
+const NoteList = ({ note }) => (
   <li>
-    <h2>Title</h2>
-    <p>Caption...</p>
+    <h2>{note.title}</h2>
+    <p>{note.body}</p>
   </li>
 );
 

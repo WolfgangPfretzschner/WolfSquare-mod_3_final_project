@@ -1,13 +1,14 @@
 import React from 'react';
 import NoteItem from './NoteItem';
 
-const NoteList = (props) => {
-  return (
-    <ul>
-      {/* Render list of notes here... */}
-      <NoteItem />
-    </ul>
-  );
+const NoteList = ({ notes }) => {
+    let notesArray = notes.map(note => <NoteItem key={note.id} note={note}/>)
+
+    return (
+        <ul>
+            {notesArray}
+        </ul>
+    );
 }
 
 export default NoteList;
