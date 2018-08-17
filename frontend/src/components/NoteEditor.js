@@ -39,7 +39,6 @@ class NoteEditor extends Component {
         .catch(error => console.error('Error:', error))
         .then(response => console.log('Success:', response))
         .then( () => this.props.update(this.props.note.id))
-        .then( () => this.props.func())
     }
 
     render() {

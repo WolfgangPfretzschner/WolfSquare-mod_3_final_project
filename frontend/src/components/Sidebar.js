@@ -7,12 +7,11 @@ class Sidebar extends Component {
     }
 
     render() {
-        // console.log(this.props.notes)
         return (
-        <div className='master-detail-element sidebar'>
-            <NoteList  notes={this.props.notes} func={this.props.func}/>
-            <button  >New</button>
-        </div>
+            <div className='master-detail-element sidebar'>
+                <NoteList  notes={this.props.notes} func={this.props.func}/>
+                <button onClick={this.props.addNewDefaultNote} >New</button>
+            </div>
         );
     }
 }

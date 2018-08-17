@@ -3,7 +3,7 @@ import NoteItem from './NoteItem';
 
 const NoteList = ({ notes, func }) => {
     
-    const limitContent = (title, limit = 63) => {
+    const limitContent = (title, limit = 25) => {
         const newTitle = [];
         if (title.length > limit) {
         title.split(' ').reduce((acc, cur) => {
@@ -12,8 +12,6 @@ const NoteList = ({ notes, func }) => {
             }
         return acc + cur.length;
         }, 0);
-    
-        // return the result
         return `${newTitle.join(' ')} ...`;
         }
     return title;

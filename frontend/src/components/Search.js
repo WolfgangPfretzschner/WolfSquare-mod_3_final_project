@@ -2,10 +2,6 @@ import React from 'react';
 
 const Search = ({ searchTerm, onSearchChange}) => {
 
-    // const handleChange = () => {
-
-    // }
-
     return (
         <div className="filter">
         <input
