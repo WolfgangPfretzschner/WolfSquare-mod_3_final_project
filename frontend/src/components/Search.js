@@ -1,18 +1,17 @@
-import React from 'react';
+import React from "react";
 
-const Search = ({ searchTerm, onSearchChange}) => {
-
-    return (
-        <div className="filter">
-        <input
-            value={ searchTerm }
-            onChange={(e) => onSearchChange(e.target.value) }
+const Search = ({ searchTerm, onSearchChange }) => {
+   return (
+      <div className="filter">
+         <input
+            value={searchTerm}
+            onChange={e => onSearchChange(e.target.value)}
             id="search-bar"
             type="text"
             placeholder="Search Notes"
-        />
-        </div>
-    );
-}
+         />
+      </div>
+   );
+};
 
 export default Search;
