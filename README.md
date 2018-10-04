@@ -1,5 +1,11 @@
-README: React Evernote
+README: WolfSquare
 ======================
+
+Besides the requirements listed below, I have made my own version of FourSquare and integrated it with the Notes app.
+
+A user is able to drag a marker on the map to the desired location. Additionally, a search term needs to be entered. The app will then show relevant results in the sidebar.
+
+====================================
 
 Task Lister is making its return in React! However, this time we'll be kicking it up a notch and using that same backend to drive an Evernote-like frontend built in React.
 
